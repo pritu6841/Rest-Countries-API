@@ -1,0 +1,117 @@
+body{
+    --background-color : white;
+    --element-color:white;
+    --text-color: black;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+body .dark{
+    --background-color : hsl(207,26%,17%);
+    --element-color:hsl(209,23%,22%);
+    --text-color: white;
+    
+}
+.darkMode{
+    cursor: pointer;
+}
+
+main{
+    margin-top: 45px;
+    margin-inline: auto;
+    padding-left: 100px;
+    /* background-color: pink; */
+}
+    main a{
+    text-decoration-line:none ;
+    cursor: pointer;
+    color: inherit;
+    /* background-color: pink; */
+    padding-inline: 24px;
+    /* margin-left: auto; */
+    padding-block:5px ;
+    box-shadow: 0 1px 4px 0 rgb(0, 0, 0.2);
+}
+main span{
+    cursor: pointer;
+    color: inherit;
+    /* background-color: pink; */
+    padding-inline: 24px;
+    /* margin-left: auto; */
+    padding-block:5px ;
+    box-shadow: 0 1px 4px 0 rgb(0, 0, 0.2);
+}
+.details-text{
+    display: flex;
+    /* gap: 16px; */
+    justify-content: space-between;
+    /* flex-direction: column; */
+    /* max-height: 150px; */
+    gap: 15%;
+    row-gap: 5%;
+    flex-wrap: wrap;
+}
+.details-text p{
+    margin: 2px 0;
+}
+.outerBox{
+    /* margin-inline: auto; */
+    display: flex;
+    /* padding: 3%; */
+    max-width: 1200px;
+    gap: 5%;
+    flex-wrap: wrap;
+    /* padding-inline:auto ; */
+    padding-block:70px ;
+}
+.country-content1{
+    width: 45%;
+    padding: 3%;
+    max-width: 600px;
+}
+
+.country-flag{
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    /* object-fit: contain; */
+}
+.country-flag img{
+    width: 100%;
+    /* object-fit: contain; */
+}
+.border-country a{
+    margin-left: 14px;
+    font-size: 14px;
+}
+.border-country{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+@media(max-width:768px){
+    .outerBox{
+        flex-direction: column;
+        padding-top: 45px;
+    }
+    main{
+        padding: 24px;
+        margin-top: 10px;
+    }
+    .country-flag{
+        width: 100%;
+    }
+    .country-content1{
+        width: 100%;
+
+    }
+    .details-text{
+        flex-direction: column;
+    }
+    .title{
+        font-size: 16px;
+    }
+    .top p{
+        font-size: 10px;
+    }
+}
